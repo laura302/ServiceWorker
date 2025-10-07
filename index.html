@@ -19,7 +19,7 @@
     <script>
         if("serviceWorker" in navigatior){
             navigator.serviceWorker
-            .register("/repo/sw.js")
+            .register("sw.js")
             .then(() => console.log("Service worker registrado"))
             .cath(err => console.log("Error al registrar wl SW, err"));
         }
