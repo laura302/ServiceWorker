@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer PWA</title>
+
+    <!-- vincular Manifest -->
+     <link rel="manifest" href="manifest.json">
+
+    <!-- Definir color para la barra de navegacion en moviles-->
+     <meta name="theme-color" content="#2196F3">
+
+<body>
+    <h1>Bienvenido a mi PWA</h1>
+    <p>Se puede instalar como aplicación en tu celular</p>
+
+    <button onclick="alert"('Hola desde la PWA')>Click AQUI</button>
+    <script>
+        if("serviceWorker" in navigatior){
+            navigator.serviceWorker
+            .register("/repo/sw.js")
+            .then(() => console.log("Service worker registrado"))
+            .cath(err => console.log("Error al registrar wl SW, err"));
+        }
+    </script>
+</body>
+</head>
