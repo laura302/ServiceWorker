@@ -2,7 +2,6 @@
     "name":"Mi PWA de ejemplo",
     "short_name":"MiPWA",
     "start_url":"index.html",
-    "scope": "/repo/",
     "display":"standalone",
     "background_color":"#ffffff",
     "theme_color":"#2196F3",   
