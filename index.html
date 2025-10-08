@@ -1,28 +1,30 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primer PWA</title>
 
-    <!-- vincular Manifest -->
-     <link rel="manifest" href="/repo/manifest.json">
+    <!-- Vicular el manifest -->    
+     <link rel="manifest" href="manifest.json">
 
-    <!-- Definir color para la barra de navegacion en moviles-->
-     <meta name="theme-color" content="#2196F3">
+     <!--Definir color de la barra de navegacion en moviles -->
+     <meta name="theme-color" content="#2196f3">
 
+</head>
 <body>
     <h1>Bienvenido a mi PWA</h1>
     <p>Se puede instalar como aplicación en tu celular</p>
 
-    <button onclick="alert"('Hola desde la PWA')>Click AQUI</button>
+    <button onclick="alert('Hola desde la PWA!')">Click aqui</button>
+
     <script>
-        if("serviceWorker" in navigator){
+        if ("serviceWorker" in navigator){
             navigator.serviceWorker
-            .register("sw.js")
-            .then(() => console.log("Service worker registrado"))
-            .cath(err => console.log("Error al registrar wl SW, err"));
+                .register("sw.js")
+                .then(() => console.log("Servide worker registrado"))
+                .catch(err => console.log("Error al tratar de registrar el SW", err));
         }
     </script>
 </body>
-</head>
+</html> 
